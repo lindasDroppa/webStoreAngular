@@ -1,0 +1,63 @@
+
+<table id="customers">
+    <tr>
+      <th>Description</th>
+      <th>Quantity</th>
+      <th>Price</th>
+     
+   
+    </tr>
+    
+    <tr *ngFor="let product of products">
+      <td >
+        <a (click)="removeFromCart(product.id)">&#10062;</a>
+        <div class="card-container">
+            <div class="float-layout">
+              <div class="card-image">
+                <img src="{{product.image}}">
+                <div class="card">
+                  <div class="card-title">{{product.nameofProduct}}</div>
+                  <div class="card-desc">
+                    {{product.description}}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </td>
+      <td style="text-align: center;">{{product.qtyCart}}</td>
+      <td width="10%" style="text-align: center;"><b>{{product.price}}.00</b></td>
+
+
+    </tr>
+  
+    
+  </table>
+
+
+  <div class="total-price">
+    <table>
+      <tr  style="background-color: black; color: white; height: 35px;">
+        <th colspan="2" style="text-align: center;">Total Cost</th>
+      </tr>
+      <tr>
+        <td>Items</td>
+        <td>{{size}}</td>
+      </tr>
+      <tr>
+        <td>Tax</td>
+        <td>R15.00</td>
+      </tr>
+      <tr>
+        <td>Total</td>
+        <td>R{{total}}.00</td>
+      </tr>
+      <tr>
+        <td  colspan="2"  style="text-align: right;"><button class="button-3">Check Out &#x2192;</button></td>
+      </tr>
+    </table>
+  </div>
+
+
+
+

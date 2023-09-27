@@ -1,0 +1,178 @@
+/* @import url('https://fonts.googleapis.com/css?family=Lato:400,700');
+$font: 'Lato', sans-serif; */
+
+/* $white: #F5F5F5;
+$light: #E0C9CB;
+$tan: #C3A1A0;
+$pink: #D9AAB7;
+$rose: #BA7E7E;
+$dark: #4E4E4E; */
+
+/* center container in the middle */
+
+.shop_list{
+  display: inline-flex;
+  padding: 20px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+html {
+  display: grid;
+  min-height: 100%;
+}
+
+body {
+  display: grid;
+  background: #E0C9CB;
+  font-family:  sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+  overflow: hidden;
+  width: 520px;
+  height: 350px;
+  background: #F5F5F5;
+  box-shadow: 5px 5px 15px rgba(#BA7E7E, .5);
+  border-radius: 10px;
+}
+
+p {
+  font-size: 0.6em;
+  color: #BA7E7E;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 1.2em;
+  color:  #4E4E4E;
+  margin-top: -5px;
+}
+
+h2 {
+  color: #C3A1A0;
+  margin-top: -5px;
+}
+
+img {
+  margin-left: 10px;
+  width: 290px;
+  margin-top: 47px;
+  mix-blend-mode: darken;
+  object-fit: contain;
+}
+
+.slideshow-buttons {
+  top: 70%;
+  display: none;
+}
+
+
+.one, .two, .three, .four {
+  position: absolute;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background:  #E0C9CB;
+}
+
+.one {
+  left: 22%;
+}
+.two {
+  left: 27%;
+}
+.three {
+  left: 32%;
+}
+.four {
+  left: 37%;
+}
+
+.product {
+  position: absolute;
+  width: 40%;
+  height: 100%;
+  top: 10%;
+  left: 60%;
+}
+
+.desc {
+  text-transform: none;
+  letter-spacing: 0;
+  margin-bottom: 17px;
+  color:  #4E4E4E;
+  font-size: .7em;
+  line-height: 1.6em;
+  margin-right: 25px;
+  font-size: small;
+  text-align: justify;
+}
+
+button {
+  background-color:   #4b3d3d;
+  padding: 10px;
+  display: inline-block;
+  outline: 0;
+  border: 0;
+  margin: -1px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  cursor: pointer;
+ 
+}
+
+.add {
+  width: 60%;
+}
+
+.like {
+  width: 22%;
+  margin-left: 2%;
+}
+
+.sizes {
+  display: grid;
+  color: #D9AAB7;
+  grid-template-columns: repeat(auto-fill, 30px);
+  width: 60%;
+  grid-gap: 4px;
+  margin-left: 20px;
+  margin-top: 5px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+
+.focus{
+  background-color: BA7E7E;
+  color:  #F5F5F5;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  font-size: 0.8em;
+  text-transform: uppercase;
+  padding: 10px;
+  p {
+    letter-spacing: 3px;
+  }
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    &:hover {
+      color: #7d7d7d;
+    }
+  }
+}

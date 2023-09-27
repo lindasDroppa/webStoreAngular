@@ -1,0 +1,53 @@
+<!-- <ul>
+    <li><a  >Home</a></li>
+    <li><a >News</a></li>
+    <li><a >Contact</a></li>
+    <li><a >About</a></li>
+    <li><a >{{username}}</a></li>
+    <li><a>Cart</a></li>
+    <li><a>{{logout}}</a></li>
+  </ul>
+
+  
+   -->
+
+   <nav class="navbar">
+    <div class="nav">
+       SAMSON SCHOOL SUPPLIERS
+        <div class="nav-items">
+            <div class="search">
+                <input type="text" class="search-box" placeholder="search brand, product">
+                <button class="search-btn">search</button>
+            </div>
+            <a ><img src="https://firebasestorage.googleapis.com/v0/b/onlineshopproject-f022b.appspot.com/o/pngwing.com.png?alt=media&token=14df831f-9fec-4eee-83c6-2faa8e207fd3" alt="" (click)="goToPage()">
+    
+            </a>
+            <a>
+                {{userName()}}
+            </a>
+          
+            <a (click)="goToCart()" >
+                <div class="cart">
+  <span class="count">{{size}}</span>
+  <img src="https://firebasestorage.googleapis.com/v0/b/onlineshopproject-f022b.appspot.com/o/shopping-cart.png?alt=media&token=a5d19d1b-a93e-4ead-98aa-b83b8d4fcdea" alt="" class="cart">
+            
+</div>
+            </a>
+   
+           
+            <a (click)="logout()" *ngIf="isLogged()">
+                Logout
+            </a>
+            <a (click)="logout()" *ngIf="!isLogged()">
+                Register
+            </a>              
+        </div>
+    </div>
+    </nav>
+    <ul class="links-container">
+      <li class="link-item"><a routerLink="home" class="link">home</a></li>
+      <li class="link-item"><a (click)="goToTest()" class="link">women</a></li>
+      <li class="link-item"><a href="#" class="link">men</a></li>
+      <li class="link-item"><a href="#" class="link">kids</a></li>
+      <li class="link-item"><a href="#" class="link">accessories</a></li>
+  </ul>

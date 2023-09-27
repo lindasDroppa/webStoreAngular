@@ -1,0 +1,31 @@
+
+ <div class="login-page" >
+	<div class="form" [ngSwitch]="viewModel">
+
+
+		<div class="loginDiv" *ngSwitchCase="'create'">
+			<form class="login-form"  [formGroup]="formGroup" (ngSubmit)="loginProcess()"  >
+				<h1 style="text-align: center;">Sign In</h1>
+				<input type="text" autocomplete="off"  placeholder="username" formControlName="email"/>
+				<input type="password" placeholder="password" formControlName="password"/>
+				<button>login</button>
+				<p class="message">Not registered? <a  (click)="changeViewMode('login')">Create an account</a></p>
+			  </form>
+		</div>
+		
+		<div class="registerDiv">
+
+			<form class="login-form" [formGroup]="formGroupR" (ngSubmit)="createUser()" *ngSwitchCase="'login'" >
+				<h1 style="text-align: center;">Sign up</h1>
+				<input type="text" autocomplete="off"   placeholder="username" formControlName="name"/>
+				<input type="password" name="password" placeholder="password" formControlName="password"/>
+				<input type="text" name="email"  placeholder="email address"  formControlName="email"/>
+				<button (click)="createUser()">create</button>
+				<p class="message">Already registered?? <a  (click)="changeViewMode('create')">Sign In</a></p>
+			  </form>
+			
+		</div>
+
+	  
+	</div>
+  </div>
